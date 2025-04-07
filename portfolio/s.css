@@ -1,0 +1,356 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ff4081; /* Pink color */
+    color: #fff;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00bcd4; /* Aqua color */
+}
+
+/* Home Section */
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to right, #ff4081, #00bcd4); /* Gradient of pink and aqua */
+    color: white;
+    height: 100vh;
+}
+
+.home .home-img img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.home .home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.home .home-text span {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.home .home-text h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.home .home-text h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.home .home-text p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.home .btn {
+    padding: 10px 20px;
+    background: #cddc39; /* Lime color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.home .btn:hover {
+    background: #8bc34a; /* A darker lime */
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.about .heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff4081; /* Pink color */
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-text p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.about-text .information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+}
+
+.info-box i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.info-box span {
+    font-size: 16px;
+}
+
+.about-text .btn {
+    padding: 10px 20px;
+    background: #ff4081; /* Pink color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.about-text .btn:hover {
+    background: #c2185b; /* Darker pink */
+}
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+    background-color: #fafafa;
+}
+
+.services .heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff4081; /* Pink color */
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.services-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: linear-gradient(to right, #cddc39, #ffeb3b); /* Gradient from lime to yellow */
+}
+
+.services-box:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(to right, #00bcd4, #ff4081); /* Gradient from aqua to pink */
+    color: white;
+}
+
+.services-box i {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.services-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.services-box h3:last-child {
+    color: #ff4081; /* Pink color */
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.portfolio .heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff4081; /* Pink color */
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.portfolio-img {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background-color: #fafafa;
+}
+
+.contact .heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff4081; /* Pink color */
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .contact-button {
+    background: #ffeb3b; /* Yellow color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form .contact-button:hover {
+    background: #ff9800; /* Darker yellow */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/* Copyright Section */
+.copyright {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust the grid and flex layouts for smaller screens */
+    .home {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-content {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form form {
+        padding: 20px;
+    }
+}

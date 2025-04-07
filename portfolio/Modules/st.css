@@ -1,0 +1,153 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling for body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #ff4081;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header .subtitle {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+/* Container for better control over page content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2.5em;
+    color: #2196f3;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Styling for learning journey sections */
+.learning-journey {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.day-section {
+    margin-bottom: 40px;
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.day-title {
+    font-size: 2.2em;
+    color: #d32f2f;
+}
+
+.day-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #2196f3;
+    object-fit: cover;
+}
+
+.day-description {
+    width: 70%;
+}
+
+.assignment-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2196f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.assignment-link:hover {
+    background-color: #1976d2;
+}
+
+/* Contact Info */
+.contact-info {
+    background-color: #fff3e0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: #2196f3;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .day-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .day-description {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
